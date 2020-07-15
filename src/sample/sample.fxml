@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="512.0" prefWidth="737.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <ImageView fitHeight="512.0" fitWidth="737.0" opacity="0.48">
+            <image>
+                <Image url="@../sample/Image/anh.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="486.0" prefWidth="706.0">
+            <children>
+                <AnchorPane layoutX="26.0" layoutY="193.0" prefHeight="278.0" prefWidth="311.0" style="-fx-background-color: #000033;">
+                    <children>
+                        <AnchorPane layoutX="13.0" layoutY="48.0" onMouseClicked="#dashBoardView" prefHeight="4.0" prefWidth="287.0" style="-fx-background-color: #00FF00;" />
+                        <TextField fx:id="username" layoutX="102.0" layoutY="95.0" promptText="User Name">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="100.0" layoutY="149.0" promptText="password">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <Button layoutX="107.0" layoutY="198.0" mnemonicParsing="false" onAction="#dashBoardView" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #00FF00; -fx-background-radius: 90;" text="Login">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="110.0" layoutY="2.0" text="LOGIN" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="29.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="43.0" layoutY="149.0">
+                            <image>
+                                <Image url="@../sample/Image/icon1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="42.0" layoutY="95.0">
+                            <image>
+                                <Image url="@../sample/Image/icon2.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="193.0" layoutY="198.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #00FF00; -fx-background-radius: 90;" text="Cancel">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

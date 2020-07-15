@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Function.AddNew">
+    <children>
+        <ImageView fitHeight="512.0" fitWidth="737.0">
+            <image>
+                <Image url="@../Image/FunctionImage.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="95.0" layoutY="82.0" text="Tên" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="84.0" layoutY="125.0" text="Nội Dung" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="174.0" text="Số Tiền" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="271.0" text="Ngày" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="85.0" layoutY="222.0" text="Ghi Chú" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="okObj" layoutX="280.0" layoutY="321.0" mnemonicParsing="false" onAction="#okObj" prefHeight="25.0" prefWidth="97.0" text="ok">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <Button fx:id="backObj" layoutX="430.0" layoutY="321.0" mnemonicParsing="false" onAction="#backObj" prefHeight="25.0" prefWidth="106.0" text="back">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <TextField fx:id="nameObj" layoutX="224.0" layoutY="65.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font size="14.0" />
+            </font></TextField>
+        <TextField fx:id="contentObj" layoutX="224.0" layoutY="117.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="moneyObj" layoutX="224.0" layoutY="162.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font></TextField>
+        <TextField fx:id="noteObj" layoutX="224.0" layoutY="214.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;" />
+        <DatePicker fx:id="dateObj" layoutX="224.0" layoutY="270.0" prefHeight="25.0" prefWidth="354.0" />
+    </children>
+</AnchorPane>
